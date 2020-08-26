@@ -1,0 +1,9 @@
+apiVersion: keto.ory.sh/v1alpha1
+kind: Role
+metadata:
+  name: example-role
+  namespace: default
+spec:
+  members:
+    - users:maria
+    - users:petr

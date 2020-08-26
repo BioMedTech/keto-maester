@@ -1,0 +1,10 @@
+version: "1"
+domain: ory.sh
+repo: github.com/ory/keto-maester
+resources:
+- group: keto
+  version: v1alpha1
+  kind: Policy
+- group: keto
+  version: v1alpha1
+  kind: Rule

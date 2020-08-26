@@ -1,0 +1,15 @@
+apiVersion: keto.ory.sh/v1alpha1
+kind: Policy
+metadata:
+  name: example-policy
+  namespace: default
+spec:
+  pattern_matching: "glob"
+  subjects:
+    - admin
+  actions:
+    - read
+    - write
+  effect: "allow"
+  resources:
+    - "resources:*"
